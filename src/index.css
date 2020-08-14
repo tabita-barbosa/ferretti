@@ -1,13 +1,35 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #BFAE8E !important;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
+@font-face{
+  font-family: "Bebas Neue Bold" ;
+  src: url(./fonts/BebasNeue-Bold.ttf)
+}
+
+@font-face{
+  font-family: "Bebas Neue Light";
+  src: url(./fonts/BebasNeue-Light.ttf)
+}
+
+h1{
+  font-family: "Bebas Neue Bold";
+
+}
+
+.nav-item {
+  font-family: "Bebas Neue Light";
+}
+
+.nav-item :active{
+  font-family: "Bebas Neue Bold";
+  color: #314E59;
+}
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */

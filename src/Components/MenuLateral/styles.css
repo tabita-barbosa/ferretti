@@ -1,0 +1,28 @@
+.container-nav{
+    height: auto;
+    width: 180px;
+    position: fixed;
+    padding: 40px 0px 0px 50px;
+}
+
+.nav{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.nav-link{
+    text-align: right;
+    line-height: 0.8em;
+    font-size: 25px;
+    color: black;
+}
+
+.nav-link :hover{
+    color: #314E59;
+}
+
+.icones{
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+}
