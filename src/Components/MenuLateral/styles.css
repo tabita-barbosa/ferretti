@@ -1,28 +1,45 @@
 .container-nav{
     height: auto;
-    width: 180px;
+    width: 150px;
     position: fixed;
-    padding: 40px 0px 0px 50px;
+    padding: 45px 0px 0px 90px;
+    flex-direction: column;
+}
+.logo-imagem{
+    max-width: 110px;
 }
 
-.nav{
-    padding-top: 40px;
-    padding-bottom: 20px;
+@media (max-width:768px) {
+    .container-nav{
+        flex-direction: 
+    }
 }
 
-.nav-link{
+.nav-item{
     text-align: right;
     line-height: 0.8em;
     font-size: 25px;
     color: black;
 }
 
-.nav-link :hover{
-    color: #314E59;
+.nav-item :hover{
+    color: #314e59;
+}
+.logo{
+    color: black;
+    font-family: "Bebas Neue Bold";
+}
+.logo :hover{
+    color: #314e59;
 }
 
 .icones{
-    width: 23px;
-    height: 23px;
-    margin-right: 10px;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+
+.div-icones {
+    padding: 10px 0px 0px 110px;
 }
