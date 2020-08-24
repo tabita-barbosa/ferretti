@@ -1,45 +1,69 @@
 .container-nav{
     height: auto;
-    width: 150px;
+    max-width: 50vh;
     position: fixed;
-    padding: 45px 0px 0px 90px;
+    padding: 2.8rem 0rem 0rem 5.6rem;
     flex-direction: column;
-}
-.logo-imagem{
-    max-width: 110px;
+    align-items: flex-end;
 }
 
-@media (max-width:768px) {
+@media (max-width: 450px) {
     .container-nav{
-        flex-direction: 
+        width: 20vh;
+        padding: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .class-teste{
+        display: flex;
+        justify-content: space-between;
     }
 }
 
+
+.navbar-toggler{
+    border: 0px solid transparent !important;
+}
+
+.button :focus{
+    outline: 0px auto;
+    align-items: flex-end;
+}
+
+.logo-imagem{
+    max-width: 160px;
+    max-height: 100px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 .nav-item{
+    font-family: "Bebas Neue Light";
     text-align: right;
     line-height: 0.8em;
     font-size: 25px;
-    color: black;
 }
 
-.nav-item :hover{
-    color: #314e59;
-}
-.logo{
-    color: black;
+.nav-item :active, :hover {
     font-family: "Bebas Neue Bold";
+    color: #314E59 !important ;
 }
-.logo :hover{
-    color: #314e59;
+
+.nav-light .navbar-nav .nav-link{
+    color: #000000;
+}
+
+.div-icones{
+    margin-right: 1rem;
 }
 
 .icones{
     width: 22px;
     height: 22px;
-    margin-right: 8px;
-}
-
-
-.div-icones {
-    padding: 10px 0px 0px 110px;
+    margin: 0.2rem;
 }

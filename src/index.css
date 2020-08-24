@@ -15,19 +15,12 @@ body {
   src: url(./fonts/BebasNeue-Light.ttf)
 }
 
-h1{
-  font-family: "Bebas Neue Bold";
-
+@font-face{
+  font-family: "Bebas Neue Regular";
+  src: url(./fonts/BebasNeue-Regular.ttf)
 }
 
-.nav-item {
-  font-family: "Bebas Neue Light";
-}
 
-.nav-item :active{
-  font-family: "Bebas Neue Bold";
-  color: #314E59;
-}
 /* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

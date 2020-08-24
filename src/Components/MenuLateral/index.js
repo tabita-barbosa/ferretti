@@ -20,8 +20,8 @@ const MenuLateral = () => {
                     <NavbarBrand>
                         <img className="logo-imagem" alt="logo do fotografo" src={Logo}></img>
                     </NavbarBrand>
-                    <Navbar light className="" expand="sm">
-                        <NavbarToggler onClick={toggle} />
+                    <Navbar light className="" expand="md">
+                        <NavbarToggler className="" onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav vertical className="d-flex justify-content-end" navbar>
                                 <NavItem>
