@@ -1,24 +1,30 @@
 .container-nav{
     height: auto;
-    max-width: 50vh;
+    max-width: 60vh;
     position: fixed;
     padding: 2.8rem 0rem 0rem 5.6rem;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 @media (max-width: 450px) {
     .container-nav{
-        width: 20vh;
-        padding: auto;
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        flex-wrap: wrap;
+        padding: .5rem 2rem .5rem 2rem;
+        max-width: 60vh;
+        align-items: center;
+        justify-content: space-around;
     }
-    .class-teste{
+
+    .div-menu{
         display: flex;
-        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .navbar-brand{
+        align-self: flex-end;
+    }
+
+    .navbar-toggler{
+        padding: .1rem .1rem !important; 
+        align-self: center;
     }
 }
 
@@ -29,7 +35,6 @@
 
 .button :focus{
     outline: 0px auto;
-    align-items: flex-end;
 }
 
 .logo-imagem{

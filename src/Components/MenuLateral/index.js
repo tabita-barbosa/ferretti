@@ -15,13 +15,13 @@ const MenuLateral = () => {
 
     return (
         <Router>
-            <div className="container-nav d-flex">
-                <div className="class-teste">
+            <div className="container-nav d-flex align-items-end flex-column">
+                <div className="div-menu">
                     <NavbarBrand>
                         <img className="logo-imagem" alt="logo do fotografo" src={Logo}></img>
                     </NavbarBrand>
-                    <Navbar light className="" expand="md">
-                        <NavbarToggler className="" onClick={toggle} />
+                    <Navbar light className="" expand="sm">
+                        <NavbarToggler className="botao-menu" onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav vertical className="d-flex justify-content-end" navbar>
                                 <NavItem>
