@@ -8,7 +8,6 @@
 @media (max-width: 450px) {
     .container-nav{
         padding: .5rem 2rem .5rem 2rem;
-        max-width: 60vh;
         align-items: center;
         justify-content: space-around;
     }

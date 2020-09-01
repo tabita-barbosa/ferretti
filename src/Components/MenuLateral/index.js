@@ -15,10 +15,10 @@ const MenuLateral = () => {
 
     return (
         <Router>
-            <div className="container-nav d-flex align-items-end flex-column">
+            <div className="container-nav col-m-4 d-flex align-items-end flex-column">
                 <div className="div-menu">
                     <NavbarBrand>
-                        <img className="logo-imagem" alt="logo do fotografo" src={Logo}></img>
+                        <img className="logo-imagem" alt="logo escrito Gui Ferretti" src={Logo}></img>
                     </NavbarBrand>
                     <Navbar light className="" expand="sm">
                         <NavbarToggler className="botao-menu" onClick={toggle} />
