@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container } from 'reactstrap';
 import VideoMO from '../../Components/Video';
 import CarouselDepos from '../../Components/CarouselDepos';
 import './styles.css';
@@ -13,16 +14,17 @@ class Home extends Component {
     }
     render(){
         return(
-            <>
-            <div className="div-video">
+            <Container className="container-home">
+             <div className="div-video">
                 <VideoMO>
                 </VideoMO>
             </div>
+            {/*
             <div className="div-carrousel">
                 <CarouselDepos>
                 </CarouselDepos>
-            </div>
-            </>
+            </div> */}
+            </Container>
         );
     }
 }

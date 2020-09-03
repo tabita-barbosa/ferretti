@@ -1,39 +1,12 @@
 .container-nav{
     height: auto;
-    max-width: 60vh;
+    max-width: 40vh;
     position: fixed;
-    padding: 2.8rem 0rem 0rem 5.6rem;
+    padding: 2.5rem 0rem 0rem 4rem !important;
 }
-
-@media (max-width: 450px) {
-    .container-nav{
-        padding: .5rem 2rem .5rem 2rem;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    .div-menu{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .navbar-brand{
-        align-self: flex-end;
-    }
-
-    .navbar-toggler{
-        padding: .1rem .1rem !important; 
-        align-self: center;
-    }
-}
-
 
 .navbar-toggler{
     border: 0px solid transparent !important;
-}
-
-.button :focus{
-    outline: 0px auto;
 }
 
 .logo-imagem{
@@ -42,8 +15,7 @@
 }
 
 .navbar-collapse{
-    justify-content: flex-end;
-    align-items: flex-end;
+    margin-left: 2.2rem;
 }
 
 .nav-item{
@@ -64,10 +36,83 @@
 
 .div-icones{
     margin-right: 1rem;
+    margin-left: 2rem;
 }
 
 .icones{
     width: 22px;
     height: 22px;
     margin: 0.2rem;
+}
+
+
+/* Media Query pra redimensionar o menu hambuguer*/
+
+@media (max-width: 450px) {
+    .navbar-collapse{
+        display: flex;
+        background: #f2d888;
+        align-items: center;
+        justify-content: center;
+        margin: 0px !important;
+
+        height: 40%;
+        width: 100%;
+
+        overflow: hidden;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+
+        transition: all .5s ease;
+        transform: translateX(0px) ;
+        transform: translateY(180px);
+    }
+
+    .div-menu{
+        display: flex;
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+
+    .container-nav{
+        padding: .3rem 0rem !important;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100vh;
+    }
+
+    .collapse.show.navbar-collapse{
+        margin: 0px !important;
+    }
+
+    .collapsing.navbar-collapse{
+        height: 40%;
+        position: fixed;
+    }
+
+    .nav-item{
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .navbar-toggler{
+        padding: .1rem .1rem !important; 
+        margin-right: 1rem;
+    }
+
+    .div-icones{
+        align-self: flex-end;
+        padding-right: .5rem;
+    }
+
+    .navbar-brand{
+        padding: .5rem auto ;
+    }
+
 }

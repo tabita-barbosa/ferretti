@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavItem, NavLink, Navbar, Nav, Collapse, NavbarToggler, NavbarBrand, Row, Col } from "reactstrap";
+import { NavItem, NavLink, Navbar, Nav, Collapse, NavbarToggler, NavbarBrand, Container } from "reactstrap";
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 import './styles.css';
 import Quinhentos from '../../icons/500px-brands.svg';
@@ -15,15 +15,15 @@ const MenuLateral = () => {
 
     return (
         <Router>
-            <div className="container-nav col-m-4 d-flex align-items-end flex-column">
+            <Container className="container-nav d-flex flex-column">
                 <div className="div-menu">
                     <NavbarBrand>
-                        <img className="logo-imagem" alt="logo escrito Gui Ferretti" src={Logo}></img>
+                        <img className="logo-imagem" alt="Gui Ferretti logo" src={Logo}></img>
                     </NavbarBrand>
                     <Navbar light className="" expand="sm">
                         <NavbarToggler className="botao-menu" onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
-                            <Nav vertical className="d-flex justify-content-end" navbar>
+                            <Nav vertical className="d-flex justify-content-start" navbar>
                                 <NavItem>
                                     <NavLink tag={Link} to={"/"}>
                                         Home
@@ -63,7 +63,7 @@ const MenuLateral = () => {
                         </Collapse>
                     </Navbar>
                 </div>
-                <div className=" div-icones d-flex justify-content-end">
+                <div className=" div-icones d-flex justify-content-start">
                     <a href="https://www.instagram.com/guiferretti/">
                         <img alt="icone do instagram" className="icones" src={Instagram}></img>
                     </a>
@@ -77,7 +77,7 @@ const MenuLateral = () => {
                         <img alt="icone do twitter" className="icones" src={Twitter}></img>
                     </a>
                 </div>
-            </div>
+            </Container>
         </Router>
     );
 }

@@ -1,7 +1,22 @@
 .video-container{
     padding: 4rem 2rem 2rem 16rem;
+    justify-content: center;
+    margin-left: 10rem;
 }
 
 .video-content{
     width: 85%;
+}
+
+@media (max-width: 600px) {
+    .video-container{
+        /* padding: 2rem; */
+        justify-content: center;
+        align-items: center;
+        margin: 8rem 0rem 0rem 0rem;
+        position: relative;
+    }
+    .video-content{
+        width: 100%;
+    }
 }
