@@ -1,9 +1,11 @@
 .container-nav{
     height: auto;
-    max-width: 40vh;
+    width: 100px;
+    max-width: 20vh;
     position: fixed;
-    padding: 2.5rem 0rem 0rem 4rem !important;
+    padding: 2.5rem 0rem 0rem 3rem !important;
 }
+
 
 .navbar-toggler{
     border: 0px solid transparent !important;
@@ -15,28 +17,35 @@
 }
 
 .navbar-collapse{
-    margin-left: 2.2rem;
+    padding-left: 2rem;
 }
 
 .nav-item{
-    font-family: "Bebas Neue Light";
+    font-family: "Bebas Neue";
+    font-weight: lighter;
     text-align: right;
     line-height: 0.8em;
     font-size: 25px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 6rem;
 }
 
-.nav-item :active, :hover {
-    font-family: "Bebas Neue Bold";
-    color: #314E59 !important ;
+.nav-item :active {
+    font-weight: bold; 
+    color: #314E59;
+
 }
 
-.nav-light .navbar-nav .nav-link{
-    color: #000000;
+.nav-item :hover {
+    font-weight: bold; 
+    color: #314E59 !important;
+
 }
 
 .div-icones{
-    margin-right: 1rem;
-    margin-left: 2rem;
+    /* margin-right: 1rem; */
+    margin-left: 1.6rem;
 }
 
 .icones{
@@ -48,7 +57,7 @@
 
 /* Media Query pra redimensionar o menu hambuguer*/
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
     .navbar-collapse{
         display: flex;
         background: #f2d888;
@@ -59,25 +68,23 @@
         height: 40%;
         width: 100%;
 
-        overflow: hidden;
+        overflow-x: hidden;
         overflow-y: auto;
         position: fixed;
-        z-index: 1;
-        top: 0;
+        top: -33px;
         left: 0;
 
         transition: all .5s ease;
         transform: translateX(0px) ;
         transform: translateY(180px);
     }
-
+    
     .div-menu{
         display: flex;
         padding: 0rem 0.5rem;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
     }
 
     .container-nav{
@@ -85,6 +92,8 @@
         flex-direction: row;
         justify-content: space-between;
         max-width: 100vh;
+        z-index: 1;
+        background-color: #BFAE8E;
     }
 
     .collapse.show.navbar-collapse{
@@ -103,16 +112,15 @@
 
     .navbar-toggler{
         padding: .1rem .1rem !important; 
-        margin-right: 1rem;
     }
 
     .div-icones{
         align-self: flex-end;
-        padding-right: .5rem;
+        padding-right: 1.5rem;
     }
 
     .navbar-brand{
-        padding: .5rem auto ;
+        padding: .5rem auto;
     }
 
 }

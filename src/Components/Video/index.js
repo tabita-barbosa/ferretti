@@ -7,7 +7,7 @@ const VideoMO = () => {
     return(
         <Container>
             <Row >
-                <Col className="video-container">
+                <Col className="video-container d-flex">
                     <video className="video-content" src={videoHome} height="auto" autoPlay="true" loop="true" muted="true" >
                     </video>
                 </Col>

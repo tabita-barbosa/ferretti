@@ -1,6 +1,49 @@
 .carousel{
-    margin-left: 17.5rem;
-    padding: 6rem;
+    margin-left: 14.3rem;
+    margin-bottom: 3rem;
+    padding: 1rem 4rem 0.5rem 4rem;
     max-height: 250px;
-    width: 75%;
+    width: 76%;
+    /* max-width: 50%; */
+    background: rgba(242, 216, 136, 50%);
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+    color: #a65a3f;
+}
+
+.carousel-item{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important; 
+}
+
+.titulo-carousel {
+    font-family: "Bebas Neue"; 
+    font-weight: bold;
+    color: #314E59;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 450px) {
+    .carousel{
+        margin: 0rem auto 1rem 0.4rem;
+        padding: 1rem 3rem 0.5rem 3rem;
+        max-height: 70%;
+        width: 96%;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        margin: 0.5rem;
+    }
+}
+
+@media (width: 768px) {
+    .carousel{
+        margin: 0rem auto 1rem 0.4rem;
+        width: 97%
+    }
 }

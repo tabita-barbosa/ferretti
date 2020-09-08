@@ -1,0 +1,17 @@
+.container-fotos{
+    padding: 3rem 2rem;
+    width: 400px;
+}
+
+.card{
+    background-color: transparent !important;
+    width: 200px;
+    height: 300px;
+}
+
+.titulo-pack{
+    /* padding-top: 3rem; */
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    color: #314E59;
+}

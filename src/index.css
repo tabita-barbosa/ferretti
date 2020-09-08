@@ -1,25 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 body {
   margin: 0;
   background-color: #BFAE8E !important;
+  font-family: "Source Sans Pro", sans-serif;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
 
+
 @font-face{
-  font-family: "Bebas Neue Bold" ;
-  src: url(./fonts/BebasNeue-Bold.ttf)
+  font-family: "Bebas Neue";
+  src: url(./fonts/BebasNeue-Bold.ttf);
+  font-weight: bold;
 }
 
 @font-face{
-  font-family: "Bebas Neue Light";
-  src: url(./fonts/BebasNeue-Light.ttf)
+  font-family: "Bebas Neue";
+  src: url(./fonts/BebasNeue-Light.ttf);
+  font-weight: lighter;
 }
 
 @font-face{
   font-family: "Bebas Neue Regular";
-  src: url(./fonts/BebasNeue-Regular.ttf)
+  src: url(./fonts/BebasNeue-Regular.ttf);
+  font-weight: normal;
 }
-
 
 /* 
 code {

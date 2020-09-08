@@ -19,11 +19,10 @@ class Home extends Component {
                 <VideoMO>
                 </VideoMO>
             </div>
-            {/*
             <div className="div-carrousel">
                 <CarouselDepos>
                 </CarouselDepos>
-            </div> */}
+            </div>
             </Container>
         );
     }

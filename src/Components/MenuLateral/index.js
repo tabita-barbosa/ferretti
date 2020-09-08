@@ -20,7 +20,7 @@ const MenuLateral = () => {
                     <NavbarBrand>
                         <img className="logo-imagem" alt="Gui Ferretti logo" src={Logo}></img>
                     </NavbarBrand>
-                    <Navbar light className="" expand="sm">
+                    <Navbar light className="" expand="lg">
                         <NavbarToggler className="botao-menu" onClick={toggle} />
                         <Collapse isOpen={isOpen} navbar>
                             <Nav vertical className="d-flex justify-content-start" navbar>
@@ -35,7 +35,7 @@ const MenuLateral = () => {
                             </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} to={"/"}>
+                                    <NavLink tag={Link} to={"/pacotes"}>
                                         Pacotes
                             </NavLink>
                                 </NavItem>
