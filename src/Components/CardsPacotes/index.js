@@ -5,27 +5,75 @@ import './styles.css';
 const CardsPacotes = () => {
     return (
         <Container className="container-fotos">
-            <h1 className="titulo-pack text-center">FOTOS</h1>
-            {/* <Row className="container-fotos"> */}
-                <Col className="lg-4">
-                    <Card>
-                        <CardHeader tag="h3">PACK 1</CardHeader>
+            <Row className="linha-fotos">
+                <Col sm="4">
+                    <Card className="text-center">
                         <CardBody>
-                            <CardTitle>PACK 1 title</CardTitle>
-                            <CardText>
-                                - 15 fotos
-                                - Make
-                                - 1 hora
-                                - Foto avulsa R$ 80
+                            <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                            <CardText className="">
+                            <p>- 15 fotos
+                            </p>
+                            <p>- Make
+                            </p>
+                            <p>- 1 hora
+                            </p>
+                            <p>- Foto avulsa R$ 80
+                            </p>
                             </CardText>
-                            <CardSubtitle>
+                            <CardSubtitle className="text-weight-bold">
                                 Investimento R$ 850
                             </CardSubtitle>
-                            <Button>Contratar</Button>
+                            <Button href="/">Contratar</Button>
                         </CardBody>
                     </Card>
                 </Col>
-            {/* </Row> */}
+                
+                <Col sm="4">
+                    <Card className="text-center">
+                        <CardBody>
+                            <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                            <CardText>
+                            <p>- 15 fotos
+                            </p>
+                            <p>- Make
+                            </p>
+                            <p>- 1 hora
+                            </p>
+                            <p>- Foto avulsa R$ 80
+                            </p>
+                            </CardText>
+                            <CardSubtitle className="text-weight-bold">
+                                Investimento R$ 850
+                            </CardSubtitle>
+                            <Button href="/">Contratar</Button>
+                        </CardBody>
+                    </Card>
+                </Col>
+                
+                <Col sm="4">
+                    <Card className="text-center">
+                        <CardBody>
+                            <CardTitle className="text-uppercase">
+                                PACK 1 title
+                            </CardTitle>
+                            <CardText>
+                            <p>- 15 fotos
+                            </p>
+                            <p>- Make
+                            </p>
+                            <p>- 1 hora
+                            </p>
+                            <p>- Foto avulsa R$ 80
+                            </p>
+                            </CardText>
+                            <CardSubtitle className="text-weight-bold">
+                                Investimento R$ 850
+                            </CardSubtitle>
+                            <Button className="botao-compra" href="/">Contratar</Button>
+                        </CardBody>
+                    </Card>
+                </Col>
+            </Row>
         </Container>
     )
 }
