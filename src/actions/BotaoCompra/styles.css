@@ -1,3 +1,10 @@
 .botao-compra{
-    background-color: #314E59;
+    background-color: rgba(49, 78, 89, 50%);
+    color: rgba(49, 78, 89, 100%);
+    font-weight: bold;
+    margin: 1rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: thin;
 }

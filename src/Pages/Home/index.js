@@ -14,16 +14,16 @@ class Home extends Component {
     }
     render(){
         return(
-            <Container className="container-home">
-             <div className="div-video">
+            <>
+            <div>
                 <VideoMO>
                 </VideoMO>
             </div>
-            <div className="div-carrousel">
+            <div>
                 <CarouselDepos>
                 </CarouselDepos>
             </div>
-            </Container>
+            </>
         );
     }
 }

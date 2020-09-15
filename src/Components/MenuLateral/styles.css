@@ -1,11 +1,10 @@
 .container-nav{
     height: auto;
-    width: 100px;
-    max-width: 20vh;
+    width: 20%;
+    max-width: 200px !important;
     position: fixed;
     padding: 2.5rem 0rem 0rem 3rem !important;
 }
-
 
 .navbar-toggler{
     border: 0px solid transparent !important;
@@ -44,8 +43,8 @@
 }
 
 .div-icones{
-    /* margin-right: 1rem; */
-    margin-left: 1.6rem;
+    margin-right: 1rem;
+    margin-left: 1.8rem;
 }
 
 .icones{
@@ -71,10 +70,11 @@
         overflow-x: hidden;
         overflow-y: auto;
         position: fixed;
+
         top: -33px;
         left: 0;
 
-        transition: all .5s ease;
+        transition: top 3s ease-in-out;
         transform: translateX(0px) ;
         transform: translateY(180px);
     }
@@ -85,10 +85,12 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
+        z-index: 1;
     }
 
     .container-nav{
         padding: .3rem 0rem !important;
+        margin-left: 1.2rem !important;
         flex-direction: row;
         justify-content: space-between;
         max-width: 100vh;
@@ -111,16 +113,18 @@
     }
 
     .navbar-toggler{
-        padding: .1rem .1rem !important; 
+        /* padding: .1rem .1rem !important;  */
     }
 
     .div-icones{
         align-self: flex-end;
-        padding-right: 1.5rem;
+        padding-right: 0.6rem;
     }
+}
 
-    .navbar-brand{
-        padding: .5rem auto;
+@media (max-width: 450px){
+    .container-nav{
+        padding: .3rem 0rem !important;
+        margin-left: 0rem !important;
     }
-
 }

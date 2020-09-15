@@ -1,18 +1,21 @@
+.container-all{
+    padding-top: 3.2rem;
+}
+
 .container-fotos{
-    padding-top: 3rem;
-    padding-left: 13rem !important;
+    margin-left: 11.5rem ;
+    max-width: 90%;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
     background-color: rgba(242, 216, 136,35%);
-    width: 900px !important;
-    height: 400px;
     border-radius: 15px;
 }
 
 .card{
     background-color: transparent !important;
-    width: 200px;
+    width: 220px;
     height: 300px;
     font-family: "Source Sans Pro";
     border-color: #ffffff;
@@ -22,16 +25,32 @@
 
 .card :hover{
     background-color: rgba(166, 90, 63, 30%);
+    border-radius: 15px;
 }
 
-.card-title{
+.card-content{
+    text-align: center;
+    line-height: 1.8rem;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.card-title, .card-subtitle{
     font-weight: bold;
 }
 
 .titulo-pack{
-    justify-self: center;
-    padding: 3rem;
+    padding-top: .8rem;
+    text-align: center;
     font-family: 'Bebas Neue';
     font-weight: bold;
     color: #314E59;
+}
+
+@media (max-width: 768px){
+    .container-fotos{
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 400px;
+    }
 }

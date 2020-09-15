@@ -1,79 +1,95 @@
 import React from 'react';
-import { Row, Col, CardHeader, Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Container} from 'reactstrap';
+import { Row, Col, CardHeader, Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Container } from 'reactstrap';
+import BotaoCompra from '../../actions/BotaoCompra'
 import './styles.css';
 
-const CardsPacotes = () => {
+const CardsPacotes = (props) => {
     return (
-        <Container className="container-fotos">
-            <Row className="linha-fotos">
-                <Col sm="4">
-                    <Card className="text-center">
-                        <CardBody>
-                            <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
-                            <CardText className="">
-                            <p>- 15 fotos
-                            </p>
-                            <p>- Make
-                            </p>
-                            <p>- 1 hora
-                            </p>
-                            <p>- Foto avulsa R$ 80
-                            </p>
-                            </CardText>
-                            <CardSubtitle className="text-weight-bold">
-                                Investimento R$ 850
-                            </CardSubtitle>
-                            <Button href="/">Contratar</Button>
-                        </CardBody>
-                    </Card>
+        <Container className="container-all">
+            <div className="container-fotos">
+                <Col lg="10">
+                    <h1 className="titulo-pack"> FOTOS</h1>
                 </Col>
-                
-                <Col sm="4">
-                    <Card className="text-center">
-                        <CardBody>
-                            <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
-                            <CardText>
-                            <p>- 15 fotos
-                            </p>
-                            <p>- Make
-                            </p>
-                            <p>- 1 hora
-                            </p>
-                            <p>- Foto avulsa R$ 80
-                            </p>
-                            </CardText>
-                            <CardSubtitle className="text-weight-bold">
-                                Investimento R$ 850
+                <Card className="text-center">
+                    <CardBody>
+                        <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                        <CardText className="">
+                            <ul className="card-content">
+                                <li>
+                                    15 fotos
+                                </li>
+                                <li>
+                                    Make
+                                </li>
+                                <li>
+                                    1 hora
+                                </li>
+                                <li>
+                                    Foto avulsa R$ 80
+                                </li>
+                            </ul>
+                        </CardText>
+                        <CardSubtitle className="">
+                            Investimento R$ 850
                             </CardSubtitle>
-                            <Button href="/">Contratar</Button>
-                        </CardBody>
-                    </Card>
-                </Col>
-                
-                <Col sm="4">
-                    <Card className="text-center">
-                        <CardBody>
-                            <CardTitle className="text-uppercase">
-                                PACK 1 title
+                        <BotaoCompra href={props.pagseguro}></BotaoCompra>
+                    </CardBody>
+                </Card>
+
+                <Card className="text-center">
+                    <CardBody>
+                        <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                        <CardText>
+                            <ul className="card-content">
+                                <li>
+                                    15 fotos
+                                </li>
+                                <li>
+                                    Make
+                                </li>
+                                <li>
+                                    1 hora
+                                </li>
+                                <li>
+                                    Foto avulsa R$ 80
+                                </li>
+                            </ul>
+                        </CardText>
+                        <CardSubtitle className="">
+                            Investimento R$ 850
+                            </CardSubtitle>
+                        <BotaoCompra href={props.pagseguro}></BotaoCompra>
+                    </CardBody>
+                </Card>
+
+                <Card className="text-center">
+                    <CardBody>
+                        <CardTitle className="text-uppercase">
+                            PACK 1 title
                             </CardTitle>
-                            <CardText>
-                            <p>- 15 fotos
-                            </p>
-                            <p>- Make
-                            </p>
-                            <p>- 1 hora
-                            </p>
-                            <p>- Foto avulsa R$ 80
-                            </p>
-                            </CardText>
-                            <CardSubtitle className="text-weight-bold">
-                                Investimento R$ 850
+                        <CardText>
+                            <ul className="card-content">
+                                <li>
+                                    15 fotos
+                                </li>
+                                <li>
+                                    Make
+                                </li>
+                                <li>
+                                    1 hora
+                                </li>
+                                <li>
+                                    Foto avulsa R$ 80
+                                </li>
+                            </ul>
+                        </CardText>
+                        <CardSubtitle className="">
+                            Investimento R$ 850
                             </CardSubtitle>
-                            <Button className="botao-compra" href="/">Contratar</Button>
-                        </CardBody>
-                    </Card>
-                </Col>
-            </Row>
+                        <BotaoCompra href={props.pagseguro}></BotaoCompra>
+                    </CardBody>
+                </Card>
+            </div>
         </Container>
     )
 }

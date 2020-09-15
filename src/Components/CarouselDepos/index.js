@@ -3,7 +3,8 @@ import {
   Carousel,
   CarouselItem,
   CarouselControl,
-  CarouselIndicators
+  CarouselIndicators,
+  Col
 } from 'reactstrap';
 import data from "../../depos.json";
 import './styles.css';
@@ -43,7 +44,7 @@ const CarouselDepos = (props) => {
 
   return (
     <>
-      <div>
+      <Col sm="12">
         <Carousel
           activeIndex={activeIndex}
           next={next}
@@ -57,7 +58,7 @@ const CarouselDepos = (props) => {
           <CarouselControl direction="prev" directionText="anterior" onClickHandler={previous} />
           <CarouselControl direction="next" directionText="proximo" onClickHandler={next} />
         </Carousel>
-      </div>
+      </Col>
     </>
   );
 }

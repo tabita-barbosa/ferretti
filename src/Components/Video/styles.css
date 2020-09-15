@@ -1,19 +1,19 @@
 .video-container{
-    padding: 3rem 2rem 3rem 10rem;
     justify-content: center;
-    margin-left: 12rem;
+    margin-left: 12.8rem;
+    padding: 3.2rem 0rem 2rem 0rem;
 }
 
 .video-content{
-    width: 95%;
+    max-width: 95%;
 }
 
 @media (max-width: 768px) {
     .video-container{
         justify-content: center;
         align-items: center;
-        margin-top: 8rem;
-        margin-left: 0px;
+        padding-top: 10rem;
+        margin-left: 4rem;
     }
     .video-content{
         width: 65vh;
@@ -21,7 +21,10 @@
 }
 
 @media (max-width: 450px) {
+    .video-container{
+        margin-left: 0rem;
+    }
     .video-content{
-        width: 50vh
+        width: 50vh;
     }
 }

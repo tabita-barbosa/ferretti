@@ -4,15 +4,11 @@ import videoHome from '../../assets/video.MOV';
 import './styles.css';
 
 const VideoMO = () => {
-    return(
-        <Container>
-            <Row >
-                <Col className="video-container d-flex">
-                    <video className="video-content" src={videoHome} height="auto" autoPlay="true" loop="true" muted="true" >
-                    </video>
-                </Col>
-            </Row>
-        </Container>
+    return (
+            <Col sm="10" className="video-container d-flex">
+                <video className="video-content" src={videoHome} height="auto" autoPlay="true" loop="true" muted="true" >
+                </video>
+            </Col>
     )
 }
 
