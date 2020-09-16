@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import CardsPacotes from '../../Components/CardsPacotes';
+import CardsExtra from '../../Components/CardsExtra';
+import PerguntasFrequentes from '../../Components/PerguntasFrequentes';
 import './styles.css';
 
 class Pacotes extends Component {
@@ -14,6 +16,12 @@ class Pacotes extends Component {
         <>
         <CardsPacotes >
         </CardsPacotes>
+
+        <CardsExtra>
+        </CardsExtra>
+
+        <PerguntasFrequentes>
+        </PerguntasFrequentes>
         </>
         );
     }
