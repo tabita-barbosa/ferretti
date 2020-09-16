@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import CardsPacotes from '../../Components/CardsPacotes';
-import CardsExtra from '../../Components/CardsExtra';
-import PerguntasFrequentes from '../../Components/PerguntasFrequentes';
+import CardsPacotes from '../../layouts/CardsPacotes';
+// import CardsExtra from '../../layouts/CardsExtra';
+// import PerguntasFrequentes from '../../layouts/PerguntasFrequentes';
 import './styles.css';
 
 class Pacotes extends Component {
@@ -17,11 +17,11 @@ class Pacotes extends Component {
         <CardsPacotes >
         </CardsPacotes>
 
-        <CardsExtra>
+        {/* <CardsExtra>
         </CardsExtra>
 
         <PerguntasFrequentes>
-        </PerguntasFrequentes>
+        </PerguntasFrequentes> */}
         </>
         );
     }

@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   Col
 } from 'reactstrap';
-import data from "../../depos.json";
+import data from "../../dados/depos.json";
 import './styles.css';
 
 const CarouselDepos = (props) => {

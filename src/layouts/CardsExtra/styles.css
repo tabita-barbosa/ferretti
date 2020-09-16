@@ -9,35 +9,6 @@
     border-radius: 15px;
 }
 
-.card-extra{
-    background-color: transparent !important;
-    width: 200px;
-    height:200px;
-    font-family: "Source Sans Pro";
-    margin: 1rem;
-    border-radius: 15px;
-    border: 0px solid !important;
-}
-
-.card-text{
-    text-align: center !important;
-    line-height: 1.8rem;
-    list-style-type: none;
-    padding: 0rem 0rem ;
-    margin: 0rem 0rem;
-}
-
-.card-title, .card-subtitle{
-    font-weight: bold;
-}
-
-.titulo-pack-extra{
-    padding-top: .8rem;
-    text-align: center;
-    font-family: 'Bebas Neue';
-    font-weight: bold;
-    color: #314E59;
-}
 
 
 /* 

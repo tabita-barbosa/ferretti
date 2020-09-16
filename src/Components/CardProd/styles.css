@@ -1,0 +1,34 @@
+.card{
+    background-color: transparent !important;
+    width: 220px;
+    height: 300px;
+    font-family: "Source Sans Pro";
+    /* border-color: #ffffff; */
+    margin: 1rem;
+    border-radius: 15px;
+    border: 0px solid !important;
+}
+
+.card :hover{
+    background-color: rgba(166, 90, 63, 30%);
+    border-radius: 15px;
+}
+
+.card-content{
+    text-align: center;
+    line-height: 1.8rem;
+    list-style-type: none;
+    padding: .5rem;
+}
+
+.card-title, .card-subtitle{
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px){
+    .card{
+        margin: 0rem 0rem;
+        border: 0px;
+    }
+}
