@@ -12,7 +12,8 @@ class Pacotes extends Component {
     render(){
         return(
         <>
-        <CardsPacotes></CardsPacotes>
+        <CardsPacotes >
+        </CardsPacotes>
         </>
         );
     }

@@ -1,7 +1,7 @@
 .container-nav{
     height: auto;
     width: 20%;
-    max-width: 200px !important;
+    max-width: 200px;
     position: fixed;
     padding: 2.5rem 0rem 0rem 3rem !important;
 }
@@ -59,7 +59,8 @@
 @media (max-width: 768px) {
     .navbar-collapse{
         display: flex;
-        background: #f2d888;
+        padding: 0rem 0rem;
+        background-color: #f2d888;
         align-items: center;
         justify-content: center;
         margin: 0px !important;
@@ -70,6 +71,7 @@
         overflow-x: hidden;
         overflow-y: auto;
         position: fixed;
+        /* Posição fixa enquanto rola! BUG*/
 
         top: -33px;
         left: 0;
@@ -81,7 +83,7 @@
     
     .div-menu{
         display: flex;
-        padding: 0rem 0.5rem;
+        padding: 0rem 0rem;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
@@ -89,12 +91,13 @@
     }
 
     .container-nav{
-        padding: .3rem 0rem !important;
+        padding: .3rem .5rem !important;
         margin-left: 1.2rem !important;
         flex-direction: row;
         justify-content: space-between;
-        max-width: 100vh;
+        max-width: 100%;
         z-index: 1;
+        position: sticky;
         background-color: #BFAE8E;
     }
 
@@ -110,15 +113,18 @@
     .nav-item{
         text-align: center;
         font-size: 1.2em;
+        /* color: black;  BACKGROUND COLOR TA SOBREPONDO A COR*/
+        font-family: "Bebas Neue Regular";
     }
 
     .navbar-toggler{
-        /* padding: .1rem .1rem !important;  */
+        margin-left: 0.3rem;
+        padding: .1rem .1rem !important; 
     }
 
     .div-icones{
         align-self: flex-end;
-        padding-right: 0.6rem;
+        padding-right: 0rem;
     }
 }
 
@@ -126,5 +132,10 @@
     .container-nav{
         padding: .3rem 0rem !important;
         margin-left: 0rem !important;
+        padding: .3rem .3rem !important;
+    }
+    .navbar-toggler{
+        margin-left: 0rem;
     }
 }
+

@@ -20,7 +20,8 @@
     font-family: "Source Sans Pro";
     border-color: #ffffff;
     margin: 1rem;
-    border-radius: 15px !important;
+    border-radius: 15px;
+    border: 0px solid !important;
 }
 
 .card :hover{
@@ -32,7 +33,7 @@
     text-align: center;
     line-height: 1.8rem;
     list-style-type: none;
-    padding: 0.5rem;
+    padding: .5rem;
 }
 
 .card-title, .card-subtitle{
@@ -47,10 +48,26 @@
     color: #314E59;
 }
 
-@media (max-width: 768px){
+@media (max-width: 450px){
     .container-fotos{
         flex-flow: column wrap;
-        justify-content: space-around;
-        width: 400px;
+        max-width: 100%;
+        margin: 0rem auto;
+    }
+    .container-all{
+        padding-top: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    .container-fotos{
+        flex-direction: row;
+        max-width: 100%;
+        margin: 0rem auto;
+        padding-bottom: .5rem;
+    }
+    .card{
+        margin: 0rem 0rem;
+        border: 0px;
     }
 }

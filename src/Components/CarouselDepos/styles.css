@@ -41,7 +41,7 @@
 
 @media (width: 768px) {
     .carousel{
-        margin: 0rem auto 1rem 2.2rem;
-        max-width: 9%;
+        margin: 0rem auto 1rem 2.5rem;
+        width: 660px;
     }
 }

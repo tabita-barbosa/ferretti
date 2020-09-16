@@ -1,63 +1,76 @@
 import React from 'react';
-import { Row, Col, CardHeader, Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Container } from 'reactstrap';
+import { Row, Col, Card, CardText, CardBody, CardTitle, CardSubtitle, Container } from 'reactstrap';
 import BotaoCompra from '../../actions/BotaoCompra'
 import './styles.css';
+
+// const slides = data.map((depos) => {
+//     return (
+//       <CarouselItem
+//         onExiting={() => setAnimating(true)}
+//         onExited={() => setAnimating(false)}
+//       >
+//         <p className="text-center">{depos.text}</p>
+//         <p className="text-center font-weight-bold">{depos.author}</p>
+//       </CarouselItem>
+//     );
+//   });
 
 const CardsPacotes = (props) => {
     return (
         <Container className="container-all">
-            <div className="container-fotos">
+            <div className="container-fotos ">
                 <Col lg="10">
-                    <h1 className="titulo-pack"> FOTOS</h1>
+                    <h1 className="titulo-pack">{props.tituloPack}fotografia</h1>
                 </Col>
                 <Card className="text-center">
                     <CardBody>
-                        <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                        <CardTitle className="text-uppercase">{props.tituloCard}titulo</CardTitle>
                         <CardText className="">
                             <ul className="card-content">
                                 <li>
-                                    15 fotos
+                                    alo alo
+                                    {props.quant}
                                 </li>
-                                <li>
-                                    Make
+                                <li> alo alo
+                                    {props.make}
                                 </li>
-                                <li>
-                                    1 hora
+                                <li> alo alo
+                                    {props.tempo}
                                 </li>
-                                <li>
-                                    Foto avulsa R$ 80
+                                <li> alo alo
+                                    {props.fotoUnitaria}
                                 </li>
                             </ul>
                         </CardText>
                         <CardSubtitle className="">
-                            Investimento R$ 850
-                            </CardSubtitle>
+                            {props.valorPack} valor
+                        </CardSubtitle>
                         <BotaoCompra href={props.pagseguro}></BotaoCompra>
                     </CardBody>
                 </Card>
 
                 <Card className="text-center">
                     <CardBody>
-                        <CardTitle className="text-uppercase">PACK 1 title</CardTitle>
+                        <CardTitle className="text-uppercase">{props.tituloCard}</CardTitle>
                         <CardText>
                             <ul className="card-content">
                                 <li>
-                                    15 fotos
+                                    {props.quant}
                                 </li>
                                 <li>
-                                    Make
+                                    {props.make}
                                 </li>
                                 <li>
-                                    1 hora
+                                    {props.tempo}
                                 </li>
                                 <li>
-                                    Foto avulsa R$ 80
+                                    {props.fotoUnitaria}
                                 </li>
                             </ul>
                         </CardText>
                         <CardSubtitle className="">
-                            Investimento R$ 850
-                            </CardSubtitle>
+                            {props.valorPack}
+                        </CardSubtitle>
                         <BotaoCompra href={props.pagseguro}></BotaoCompra>
                     </CardBody>
                 </Card>
@@ -65,27 +78,27 @@ const CardsPacotes = (props) => {
                 <Card className="text-center">
                     <CardBody>
                         <CardTitle className="text-uppercase">
-                            PACK 1 title
-                            </CardTitle>
+                            {props.tituloCard}
+                        </CardTitle>
                         <CardText>
                             <ul className="card-content">
                                 <li>
-                                    15 fotos
+                                    {props.quant}
                                 </li>
                                 <li>
-                                    Make
+                                    {props.make}
                                 </li>
                                 <li>
-                                    1 hora
+                                    {props.tempo}
                                 </li>
                                 <li>
-                                    Foto avulsa R$ 80
+                                    {props.fotoUnitaria}
                                 </li>
                             </ul>
                         </CardText>
                         <CardSubtitle className="">
-                            Investimento R$ 850
-                            </CardSubtitle>
+                            {props.valorPack}
+                        </CardSubtitle>
                         <BotaoCompra href={props.pagseguro}></BotaoCompra>
                     </CardBody>
                 </Card>

@@ -1,0 +1,27 @@
+[
+    {
+        "packNome": "PACK 1",
+        "quantFotos": "15 fotos" ,
+        "make": "Make",
+        "tempo": "1h",
+        "fotoAvulsa": "Foto avulsa R$ 80",
+        "valor": "Investimento R$ 850"
+    },
+    {
+        "packNome": "PACK 2",
+        "quantFotos": "20 fotos",
+        "make": "Make",
+        "tempo": "1h30",
+        "fotoAvulsa": "Foto avulsa R$ 60",
+        "valor": "Investimento R$ 1.300"
+    },
+    {
+        "packNome": "PACK 3",
+        "quantFotos": "30 fotos",
+        "make": "Make",
+        "tempo": "2h",
+        "fotoAvulsa": "Foto avulsa R$ 40",
+        "valor": "Investimento R$ 2.000"
+    }
+]
+

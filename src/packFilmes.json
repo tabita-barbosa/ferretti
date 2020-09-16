@@ -1,0 +1,29 @@
+[
+    {
+        "packNome": "PACK 1",
+        "quantStories": "3 Stories (15s)",
+        "quantFeed": "1 Feed (1min)",
+        "quantIGTV": "",
+        "make": "Make",
+        "tempo": "1h",
+        "valor": "Investimento R$ 1.000"
+    },
+    {
+        "packNome": "PACK 2",
+        "quantStories": "5 Stories (15s)",
+        "quantFeed": "1 Feed (1min)",
+        "quantIGTV": "1 IGTV (3min)",
+        "make": "Make",
+        "tempo": "1h30",
+        "valor": "Investimento R$ 1.800"
+    },
+    {
+        "packNome": "PACK 3",
+        "quantStories": "8 Stories (15s)",
+        "quantFeed": "1 Feed (1min)",
+        "quantIGTV": "1 IGTV (5min)",
+        "make": "Make",
+        "tempo": "1h",
+        "valor": "Investimento R$ 2.500"
+    }
+]
