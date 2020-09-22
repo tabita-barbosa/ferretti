@@ -1,9 +1,8 @@
 import React from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
-import BotaoCompra from '../../actions/BotaoCompra';
 import './styles.css';
 
-const CardProd = (props) => {
+const CardExtra = (props) => {
     return (
         <Card className="text-center">
             <CardBody>
@@ -17,21 +16,14 @@ const CardProd = (props) => {
                         <li> alo alo
                         {props.make}
                         </li>
-                        <li> alo alo
-                        {props.tempo}
-                        </li>
-                        <li> alo alo
-                        {props.fotoUnitaria}
-                        </li>
                     </ul>
                 </CardText>
                 <CardSubtitle className="">
                     {props.valorPack} valor
-            </CardSubtitle>
-                <BotaoCompra href={props.pagseguro}></BotaoCompra>
+                </CardSubtitle>
             </CardBody>
         </Card>
     )
 }
 
-export default CardProd;
+export default CardExtra;

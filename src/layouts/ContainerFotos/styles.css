@@ -1,0 +1,36 @@
+.container-all{
+    padding-top: 1.5rem;
+}
+
+.container-pacotes{
+    margin-left: 11.5rem ;
+    margin-top: 2rem;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: rgba(242, 216, 136,35%);
+    border-radius: 15px;
+}
+
+
+@media (max-width: 450px){
+    .container-pacotes{
+        flex-flow: column wrap;
+        max-width: 100%;
+        margin: 0rem auto 2rem auto;
+    }
+    .container-all{
+        padding-top: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+    .container-pacotes{
+        flex-direction: row;
+        max-width: 100%;
+        margin: 0rem auto 2rem auto;
+        padding-bottom: .5rem;
+    }
+}
