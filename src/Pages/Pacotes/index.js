@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ContainerFotos from '../../layouts/ContainerFotos';
 import ContainerFilmes from '../../layouts/ContainerFilmes';
-// import CardsExtra from '../../layouts/CardsExtra';
+import ContainerExtras from '../../layouts/ContainerExtras';
 // import PerguntasFrequentes from '../../layouts/PerguntasFrequentes';
 import './styles.css';
 
@@ -23,9 +23,10 @@ class Pacotes extends Component {
 
                 </ContainerFilmes>
 
-        {/* <CardsExtra>
-        </CardsExtra>
+        <ContainerExtras>
 
+        </ContainerExtras>
+        {/*
         <PerguntasFrequentes>
         </PerguntasFrequentes> */}
             </>

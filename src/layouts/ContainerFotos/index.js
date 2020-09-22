@@ -8,7 +8,7 @@ import './styles.css';
 const CardsPacotes = () => {
     return (
         < Container className="container-all" >
-            <section className="container-pacotes">
+            <section className="container-fotos">
                 <Col lg="10">
                     <Titulo
                         tituloPack="fotografia">

@@ -1,6 +1,6 @@
 .container-extra{
-    margin: 2rem auto auto 15rem ;
-    width: 50%;
+    margin: 1rem auto 1rem 24.5rem ;
+    max-width: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,28 +10,17 @@
 }
 
 
-
-/* 
-@media (max-width: 450px){
-    .container-fotos{
-        flex-flow: column wrap;
+@media(max-width: 768px){
+    .container-extra{
+        flex-direction: row;
         max-width: 100%;
-        margin: 0rem auto;
-    }
-    .container-all{
-        padding-top: 1.5rem;
+        margin: 0rem auto 2rem auto !important;
+        padding-bottom: .5rem;
     }
 }
 
-@media(max-width: 768px){
-    .container-fotos{
-        flex-direction: row;
-        max-width: 100%;
-        margin: 0rem auto;
-        padding-bottom: .5rem;
+@media(max-width: 1100px){
+    .container-extra{
+        margin: 2rem auto 2rem 21.5rem;
     }
-    .card{
-        margin: 0rem 0rem;
-        border: 0px;
-    }
-} */
+}

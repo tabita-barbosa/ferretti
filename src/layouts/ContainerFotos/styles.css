@@ -2,9 +2,8 @@
     padding-top: 1.5rem;
 }
 
-.container-pacotes{
-    margin-left: 11.5rem ;
-    margin-top: 2rem;
+.container-fotos{
+    margin: 2rem auto auto 11.5rem;
     max-width: 90%;
     display: flex;
     justify-content: space-around;
@@ -16,7 +15,7 @@
 
 
 @media (max-width: 450px){
-    .container-pacotes{
+    .container-fotos{
         flex-flow: column wrap;
         max-width: 100%;
         margin: 0rem auto 2rem auto;
@@ -27,10 +26,10 @@
 }
 
 @media(max-width: 768px){
-    .container-pacotes{
+    .container-fotos{
         flex-direction: row;
         max-width: 100%;
-        margin: 0rem auto 2rem auto;
+        margin: 0rem auto 2rem 0rem;
         padding-bottom: .5rem;
     }
 }

@@ -1,23 +1,22 @@
 import React from 'react';
-import { Col} from 'reactstrap';
+import { Col, Container } from 'reactstrap';
 import CardExtra from '../../Components/CardExtra';
 import Titulo from '../../Components/Titulo';
-import data from '../../dados/packExtras.json';
 
 import './styles.css';
 
 
 const CardsExtra = () => {
     return (
-        <div className="container-extra">
+        <Container className="container-all-extra">
+        <section className="container-extra">
             <Col lg="10">
-            <Titulo></Titulo>
+            <Titulo tituloPack="EXTRAS"></Titulo>
             </Col>
             <CardExtra>
             </CardExtra>
-            <CardExtra>
-            </CardExtra>
-        </div>
+        </section>
+        </Container>
     )
 }
 

@@ -7,7 +7,7 @@ import './styles.css';
 
 const ContainerFilmes = () => {
     return (
-        < Container className="container-all" >
+        < Container className="">
             <section className="container-filmes">
                 <Col lg="10">
                     <Titulo

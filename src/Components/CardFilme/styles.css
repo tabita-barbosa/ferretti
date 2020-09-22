@@ -1,7 +1,7 @@
 .card{
     background-color: transparent !important;
-    width: 220px;
-    height: 320px;
+    max-width: 220px;
+    height: fit-content !important;
     font-family: "Source Sans Pro";
     margin: .5rem;
     border-radius: 15px;

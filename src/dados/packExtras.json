@@ -1,22 +1,14 @@
 [
     {
-        "tipo": "Storie",
-        "valor": "R$ 150"
-    },
-    {
-        "tipo": "Feed",
-        "valor": "R$ 300"
-    },
-    {
-        "tipo": "IGTV",
-        "valor": "R$ 500"
-    },
-    {
-        "tipo": "FULL SET (JPEG)",
-        "valor": "R$ 500"
-    },
-    {
-        "tipo": "FULL SET (RAW)",
-        "valor": "R$ 2.000"
+        "tipoFoto1": "FULL SET (JPEG)",
+        "valor1": "R$ 500",
+        "tipoFoto2": "FULL SET (RAW)",
+        "valor2": "R$ 2.000",
+        "tipoFilme1": "Stories",
+        "valor3": "R$ 150",
+        "tipoFilme2": "Feed",
+        "valor4": "R$ 300",
+        "tipoFilme3": "IGTV",
+        "valor5": "R$ 500"
     }
 ]
