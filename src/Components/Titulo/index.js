@@ -3,7 +3,7 @@ import './styles.css';
 
 const Titulo = (props) => {
     return (
-        <h2 className="titulo">{props.tituloPack}</h2>
+        <h2 className="titulo">{props.titulos}</h2>
     )
 }
 

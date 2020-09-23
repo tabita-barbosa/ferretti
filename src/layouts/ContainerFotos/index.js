@@ -11,7 +11,7 @@ const CardsPacotes = () => {
             <section className="container-fotos">
                 <Col lg="10">
                     <Titulo
-                        tituloPack="fotografia">
+                        titulos="fotografia">
                     </Titulo>
                 </Col>
                 <CardFotografia>

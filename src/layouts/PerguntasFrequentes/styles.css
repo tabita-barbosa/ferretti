@@ -1,24 +1,22 @@
-.accordion .card {
-    width: 100% ;
-    height: 40% ;
-    margin-left: 0rem;
-}
-
-.accordion{
-    width: 76%;
+.container-perguntas{
     margin: 2rem auto 2rem 15rem;
-    padding: 1.5rem 3rem;
+    max-width: 77%;
+    height: 400px;
     background-color: rgba(242, 216, 136,35%);
     border-radius: 15px;
 }
 
-.titulo-acordeao{
-    text-align: center;
-    font-family: 'Bebas Neue';
-    font-weight: bold;
-    color: #314E59;
+@media (max-width: 450px){
+    .container-perguntas{
+        max-width: 100%;
+        margin: 0rem auto 2rem auto;
+    }
 }
 
-.card-header{
-    background-color: transparent !important;
+@media(max-width: 768px){
+    .container-perguntas{
+        max-width: 100%;
+        margin: 0rem auto 2rem auto;
+        padding-bottom: .5rem;
+    }
 }

@@ -1,28 +1,25 @@
 import React from 'react';
-import {Accordion, Toggle, AccordionCollapse, Card, Header } from 'react-bootstrap';
+import { Button, Card, CardBody, UncontrolledCollapse } from 'reactstrap';
+import Titulo from '../../Components/Titulo';
 import './styles.css';
 
-const PerguntasFrequentes = () => {
+const PerguntasFrequentes = (props) => {
+
     return (
-        <Accordion>
-            <h3 className="titulo-acordeao">PERGUNTAS FREQUENTES</h3>
-            <Card className="card-acordeao">
-                <Accordion.Toggle as={Card.Header} eventKey="0">
-                    Click me!
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
-                    <Card.Body>Hello! I'm the body</Card.Body>
-                </Accordion.Collapse>
-            </Card>
-            <Card className="card-acordeao">
-                <Accordion.Toggle as={Card.Header} eventKey="1">
-                    Click me!
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="1">
-                    <Card.Body>Hello! I'm another body</Card.Body>
-                </Accordion.Collapse>
-            </Card>
-        </Accordion>
+        <section className="container-perguntas">
+            <Titulo
+                titulos="PERGUNTAS FREQUENTES"
+            >
+            </Titulo>
+            <Button color="white" id="toggler">PERGUNTA 1</Button>
+            <UncontrolledCollapse toggler="#toggler">
+                <Card>
+                    <CardBody>
+                        Lorem lorem lorem lorem lorem lorem ipsum
+                    </CardBody>
+                </Card>
+            </UncontrolledCollapse>
+        </section>
     )
 
 }

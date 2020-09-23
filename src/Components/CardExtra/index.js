@@ -7,7 +7,7 @@ const CardExtra = (props) => {
     const extras = data.map((extra) => {
         return (
             <>
-                <Card>
+                <Card className="card-extra">
                     <CardBody>
                         <CardTitle className="text-uppercase">Fotos</CardTitle>
                         <CardText className="">

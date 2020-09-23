@@ -11,7 +11,7 @@ const CardsExtra = () => {
         <Container className="container-all-extra">
         <section className="container-extra">
             <Col lg="10">
-            <Titulo tituloPack="EXTRAS"></Titulo>
+            <Titulo titulos="EXTRAS"></Titulo>
             </Col>
             <CardExtra>
             </CardExtra>

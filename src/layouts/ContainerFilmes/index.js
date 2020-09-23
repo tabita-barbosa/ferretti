@@ -11,7 +11,7 @@ const ContainerFilmes = () => {
             <section className="container-filmes">
                 <Col lg="10">
                     <Titulo
-                        tituloPack="FILMES">
+                        titulos="FILMES">
                     </Titulo>
                 </Col>
                 <CardFilme></CardFilme>

@@ -1,4 +1,4 @@
-.card{
+.card-extra{
     background-color: transparent !important;
     width: 180px;
     height: 300px;
@@ -8,9 +8,6 @@
     border: 0px solid !important;
 }
 
-.card :hover{
-    background-color: none;
-}
 
 .card-content{
     text-align: center;
@@ -25,7 +22,7 @@
 
 
 @media (max-width: 768px){
-    .card{
+    .card-extra{
         margin: 0rem 0rem;
         border: 0px;
     }
