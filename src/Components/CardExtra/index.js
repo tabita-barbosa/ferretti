@@ -28,7 +28,7 @@ const CardExtra = (props) => {
                         </CardText>
                     </CardBody>
                 </Card>
-                <Card>
+                <Card className="card-extra">
                     <CardBody>
                         <CardTitle className="text-uppercase">Filmes</CardTitle>
                         <CardText className="">

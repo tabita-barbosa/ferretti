@@ -1,4 +1,4 @@
-.card{
+.card-filme{
     background-color: transparent !important;
     max-width: 220px;
     height: fit-content !important;
@@ -9,7 +9,7 @@
     align-self: center;
 }
 
-.card :hover{
+.card-filme :hover{
     background-color: rgba(166, 90, 63, 30%);
     border-radius: 15px;
 }
@@ -33,7 +33,7 @@
 
 
 @media (max-width: 768px){
-    .card{
+    .card-filme{
         margin: 0rem 0rem;
         border: 0px;
     }

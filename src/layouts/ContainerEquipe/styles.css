@@ -1,0 +1,13 @@
+.container-equipe{
+    display: flex;
+    max-width: 60%;
+    max-height: 40%;
+    margin-left: 15rem;
+    padding: 1rem;
+}
+
+.img-equipe{
+    height: 450px;
+    width: 320px;
+    padding: 1rem;
+}

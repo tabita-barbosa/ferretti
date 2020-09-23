@@ -15,7 +15,7 @@ const MenuLateral = () => {
 
     return (
         <Router>
-            <Container className="container-nav d-flex flex-column">
+            <Container className="container-nav flex-column">
                 <div className="div-menu">
                     <NavbarBrand>
                         <img className="logo-imagem" alt="Gui Ferretti logo" src={Logo}></img>
@@ -40,7 +40,7 @@ const MenuLateral = () => {
                             </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} to={"/"}>
+                                    <NavLink tag={Link} to={"/equipe"}>
                                         Equipe
                             </NavLink>
                                 </NavItem>

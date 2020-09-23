@@ -1,7 +1,7 @@
-.card{
+.card-foto{
     background-color: transparent !important;
     width: 220px;
-    height: 280px;
+    height: fit-content;
     font-family: "Source Sans Pro";
     margin: .5rem;
     border-radius: 15px;
@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.card :hover{
+.card-foto :hover{
     background-color: rgba(166, 90, 63, 30%);
     border-radius: 15px;
 }
@@ -33,7 +33,7 @@
 
 
 @media (max-width: 768px){
-    .card{
+    .card-foto{
         margin: 0rem 0rem;
         border: 0px;
     }

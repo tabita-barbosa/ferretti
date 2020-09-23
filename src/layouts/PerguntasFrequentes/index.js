@@ -1,9 +1,12 @@
-import React from 'react';
-import { Button, Card, CardBody, UncontrolledCollapse } from 'reactstrap';
+import React, {useState} from 'react';
+import { Button, Card, CardBody, Collapse, Container } from 'reactstrap';
 import Titulo from '../../Components/Titulo';
 import './styles.css';
 
 const PerguntasFrequentes = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
 
     return (
         <section className="container-perguntas">
@@ -11,14 +14,16 @@ const PerguntasFrequentes = (props) => {
                 titulos="PERGUNTAS FREQUENTES"
             >
             </Titulo>
-            <Button color="white" id="toggler">PERGUNTA 1</Button>
-            <UncontrolledCollapse toggler="#toggler">
-                <Card>
+            <div className="div-pergunta">
+            <Button className="botao-pergunta" color="white" onClick={toggle}>PERGUNTA 1</Button>
+            <Collapse isOpen={isOpen}>
+                <Card className="card-pergunta">
                     <CardBody>
                         Lorem lorem lorem lorem lorem lorem ipsum
                     </CardBody>
                 </Card>
-            </UncontrolledCollapse>
+            </Collapse>
+            </div>
         </section>
     )
 

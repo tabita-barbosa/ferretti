@@ -1,7 +1,7 @@
 .card-extra{
     background-color: transparent !important;
     width: 180px;
-    height: 300px;
+    height: fit-content;
     font-family: "Source Sans Pro";
     margin: .5rem;
     border-radius: 15px;

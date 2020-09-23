@@ -3,6 +3,7 @@ import ContainerFotos from '../../layouts/ContainerFotos';
 import ContainerFilmes from '../../layouts/ContainerFilmes';
 import ContainerExtras from '../../layouts/ContainerExtras';
 import PerguntasFrequentes from '../../layouts/PerguntasFrequentes';
+import InfosAdicionas from '../../layouts/InfosAdicionais';
 import './styles.css';
 
 class Pacotes extends Component {
@@ -16,15 +17,16 @@ class Pacotes extends Component {
         return (
             <>
                 <ContainerFotos>
-
                 </ContainerFotos>
 
                 <ContainerFilmes>
-
                 </ContainerFilmes>
 
                 <ContainerExtras>
                 </ContainerExtras>
+
+                <InfosAdicionas>
+                </InfosAdicionas>
 
                 <PerguntasFrequentes>
                 </PerguntasFrequentes>

@@ -1,22 +1,36 @@
 .container-perguntas{
     margin: 2rem auto 2rem 15rem;
-    max-width: 77%;
-    height: 400px;
+    max-width: 76% ;
+    height: fit-content;
     background-color: rgba(242, 216, 136,35%);
     border-radius: 15px;
 }
 
+.div-pergunta{
+    min-height: 60px;
+}
+
+.card-pergunta{
+    background-color: transparent !important;
+    border: 0px solid !important;
+}
+
 @media (max-width: 450px){
     .container-perguntas{
-        max-width: 100%;
+        max-width: 90%;
         margin: 0rem auto 2rem auto;
     }
 }
 
 @media(max-width: 768px){
     .container-perguntas{
-        max-width: 100%;
+        max-width: 90% !important;
         margin: 0rem auto 2rem auto;
-        padding-bottom: .5rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .container-perguntas{
+        max-width: 72% ;
     }
 }

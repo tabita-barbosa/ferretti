@@ -8,7 +8,7 @@ const CardFilme = (props) => {
 
     const packs = data.map((pacote) => {
         return (
-            <Card>
+            <Card className="card-filme">
                 <CardBody>
                 <CardTitle className="text-uppercase">{pacote.packNome}</CardTitle>
                     <CardText className="">
